@@ -5,7 +5,7 @@
   function setLang(lang) {
     html.setAttribute("lang", lang);
     document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
-      btn.classList.toggle("active", btn.dataset.lang === lang);
+      btn.classList.toggle("active", btn.dataset.setLang === lang);
     });
     try {
       localStorage.setItem(STORAGE_KEY, lang);
@@ -16,7 +16,7 @@
 
   document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      setLang(btn.dataset.lang);
+      setLang(btn.dataset.setLang);
     });
   });
 

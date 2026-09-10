@@ -139,6 +139,7 @@ a:focus-visible, button:focus-visible{
   padding: 6px 13px;
   border-radius: 999px;
   background: var(--white);
+  color: var(--ink);
   border: 1.5px solid var(--ink);
   margin: 0 8px 8px 0;
 }
