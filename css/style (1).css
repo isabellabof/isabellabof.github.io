@@ -342,8 +342,10 @@ a:focus-visible, button:focus-visible{
   position:relative;
 }
 @media (max-width:640px){
-  .tl-item{ grid-template-columns: 0px 28px 1fr; }
+  .tl-item{ grid-template-columns: 28px 1fr; }
   .tl-date{ display:none; }
+  .tl-dot{ grid-column: 1; }
+  .tl-card{ grid-column: 2; }
 }
 .tl-date{
   font-family: var(--serif); font-weight:600; color: var(--ink-soft); font-size:.92rem;
