@@ -1,60 +1,40 @@
-# Portfólio — Isabella Bof
+# Portfólio Isabella Bof — versão 2
 
-Site estático (HTML/CSS/JS puro, sem build, sem dependências) pronto para publicar
-gratuitamente no GitHub Pages.
+Versão revisada para GitHub Pages, com foto real, visual scrapbook/polaroid e experiência profissional alinhada ao currículo enviado.
 
-## Arquivos
+## Como atualizar o seu site atual
 
-```
-index.html    → conteúdo do site
-style.css     → estilo visual
-script.js     → menu mobile
-assets/       → CV em PDF para download
-```
+No repositório `isabellabof/isabellabof.github.io`:
 
-## Como publicar no GitHub Pages (gratuito, sem domínio)
+1. Substitua `index.html`, `style.css` e `script.js` pelos arquivos desta pasta.
+2. Abra a pasta `assets` do repositório.
+3. Substitua/adicione:
+   - `isabella-photo.jpg`
+   - `Isabella_Bof_CV.pdf`
+4. Faça o commit das alterações.
+5. Aguarde aproximadamente 1–3 minutos para o GitHub Pages atualizar.
+6. Se a versão antiga continuar aparecendo, recarregue com `Ctrl + F5` (Windows) ou `Cmd + Shift + R` (Mac).
 
-1. Crie uma conta no [GitHub](https://github.com) (se ainda não tiver).
-2. Crie um repositório novo. Para ficar com a URL mais curta e "principal"
-   (`https://seu-usuario.github.io`), nomeie o repositório exatamente como:
-   ```
-   seu-usuario.github.io
-   ```
-   Troque `seu-usuario` pelo seu nome de usuário do GitHub. Se preferir manter
-   como um projeto separado (ex: `portfolio`), a URL final fica
-   `https://seu-usuario.github.io/portfolio`.
-3. Envie os arquivos desta pasta para o repositório. Duas formas:
-   - **Pelo navegador**: abra o repositório → "Add file" → "Upload files" →
-     arraste `index.html`, `style.css`, `script.js` e a pasta `assets`.
-   - **Pelo terminal** (se já usa Git):
-     ```bash
-     cd isabella-portfolio
-     git init
-     git add .
-     git commit -m "Primeira versão do portfólio"
-     git branch -M main
-     git remote add origin https://github.com/seu-usuario/seu-usuario.github.io.git
-     git push -u origin main
-     ```
-4. No repositório, vá em **Settings → Pages**.
-5. Em "Build and deployment", selecione **Deploy from a branch**, escolha a
-   branch `main` e a pasta `/ (root)`. Clique em **Save**.
-6. Aguarde 1–2 minutos. O GitHub mostrará o link do site publicado (algo como
-   `https://seu-usuario.github.io`).
+## Por que a foto anterior podia não carregar
 
-## Como atualizar depois
+O HTML procura exatamente por `assets/isabella-photo.jpg`. O nome, extensão, maiúsculas/minúsculas e pasta precisam coincidir. Esta versão já inclui o arquivo com o nome correto.
 
-Sempre que quiser mudar um texto ou dado (ex: novo cargo, novo prêmio),
-edite `index.html` diretamente pelo GitHub (ícone de lápis no arquivo) ou
-localmente e dê `git push` de novo — o site atualiza sozinho em ~1 minuto.
+## Paleta
 
-## Personalizações rápidas
+- Wisteria: `#C69FD5`
+- Lemon: `#FDFDC9`
+- Off-white: `#FFFAF4`
+- Lilac light: `#E9D5EF`
+- Ink: `#191719`
 
-- **Trocar o CV**: substitua `assets/Isabella_Bof_CV.pdf` por uma versão
-  atualizada, mantendo o mesmo nome de arquivo.
-- **Cores**: no topo de `style.css`, o bloco `:root` concentra as cores
-  (`--ink`, `--amber`, `--cream`, `--teal`) — mudar ali reflete no site inteiro.
-- **Domínio próprio no futuro**: se um dia quiser um domínio (ex:
-  `isabellabof.com`) sem trocar de hospedagem, basta comprar o domínio e
-  configurar um registro CNAME apontando para `seu-usuario.github.io` — o
-  GitHub Pages continua gratuito, você paga só o domínio.
+## Estrutura
+
+- Hero com foto em polaroid
+- Sobre mim
+- Como eu atuo
+- Experiência profissional completa
+- Projetos
+- Formação, cursos, ferramentas e idiomas
+- Contato
+
+Todo o site é HTML/CSS/JS puro, sem build e sem dependências além das fontes do Google Fonts.
