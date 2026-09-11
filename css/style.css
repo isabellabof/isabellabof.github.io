@@ -403,7 +403,7 @@ a:focus-visible, button:focus-visible{
 }
 .project-card h3{ color: var(--teal-dark); }
 .project-card .client{
-  font-size:.85rem; text-transform: none; color: var(--coral); font-weight:600; margin-bottom:8px;
+  font-size:.85rem; text-transform: none; color: var(--coral); font-weight:600; margin-bottom:8px; flex: none;
 }
 .project-card p{ color: var(--ink-soft); font-size:.96rem; flex:1; }
 
